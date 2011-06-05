@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.rhok.foodmover"
+      android:versionCode="1"
+      android:versionName="1.0">
+ `	<supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-feature android:name="android.hardware.location" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Start" android:theme="@android:style/Theme.Light"
+				android:screenOrientation="portrait"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".ConsumerActivity" android:theme="@android:style/Theme.Light"
+				android:screenOrientation="portrait"
+                android:label="@string/app_name"/>
+		<activity android:name=".ProducerActivity" android:theme="@android:style/Theme.Light"
+				android:screenOrientation="portrait"
+                android:label="@string/app_name"/>
+            
+    </application>
+</manifest>
