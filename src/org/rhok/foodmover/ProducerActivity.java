@@ -28,7 +28,7 @@ public class ProducerActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.consumer);
+        setContentView(R.layout.producer);
 									
     }
     
