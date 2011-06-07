@@ -45,11 +45,11 @@ public class NWTasks extends AsyncTask<Object, Void, Object> {
 		Log.d(TAG, "In async doInbackgnd");	
 
 		
-		final ContentValues initialValues = (ContentValues)args[0];
+		final ContentValues initialValues = (ContentValues)args[1];
         
 		createConnection();
 
-		switch ((Integer) args[1]) {
+		switch ((Integer) args[0]) {
 		case GET_PRODUCER:
 			
 		case POST_PRODUCER:
